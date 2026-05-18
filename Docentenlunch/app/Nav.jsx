@@ -29,21 +29,24 @@ export default function Nav() {
         </Pressable>
       </Link>
 
-      <Link
+
+
+  <Link
         href={{
-          pathname: "/Profile",
+          pathname: "/Bestellingen",
           params,
         }}
         asChild
       >
         <Pressable style={styles.iconWrapper}>
           <Image
-            source={require("./Images/profile.png")}
-            style={styles.profileicon}
+            source={require("./Images/Betselingen.png")}
+            style={styles.icon}
           />
         </Pressable>
       </Link>
 
+      
       <Link
         href={{
           pathname: "/Plus",
@@ -59,20 +62,21 @@ export default function Nav() {
         </Pressable>
       </Link>
 
-      <Link
+  <Link
         href={{
-          pathname: "/Bestellingen",
+          pathname: "/Profile",
           params,
         }}
         asChild
       >
         <Pressable style={styles.iconWrapper}>
           <Image
-            source={require("./Images/Betselingen.png")}
-            style={styles.icon}
+            source={require("./Images/profile.png")}
+            style={styles.profileicon}
           />
         </Pressable>
       </Link>
+
 
     </View>
   );
